@@ -1,0 +1,85 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{setspace}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{siunitx}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\usepackage{hyperref}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{\textbf{Electronics -- UPY22401J}}
+\author{Pranauv Skandhan}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{PN Junction Diode}
+
+\subsection{Definition}
+A PN junction diode is a two-terminal semiconductor device formed by joining p-type and n-type semiconductor materials. It allows current to flow easily in one direction and restricts flow in the opposite direction.
+
+\subsection{Construction}
+When p-type and n-type semiconductors are joined, a depletion region is formed near the junction due to recombination of electrons and holes. This region is free of mobile charge carriers and creates a built-in potential barrier.
+
+\subsection{Biasing of PN Junction}
+\begin{itemize}
+    \item \textbf{Forward Bias:} P-side connected to positive terminal and n-side to negative terminal. Depletion region narrows and current flows.
+    \item \textbf{Reverse Bias:} P-side connected to negative terminal and n-side to positive terminal. Depletion region widens and negligible current flows.
+\end{itemize}
+
+\subsection{V--I Characteristics}
+In forward bias, current increases exponentially after the cut-in voltage. In reverse bias, a small saturation current flows until breakdown occurs.
+
+\subsection{Applications}
+\begin{itemize}
+    \item Rectifiers
+    \item Electronic switches
+    \item Signal demodulation
+\end{itemize}
+
+\section{Zener Diode}
+
+\subsection{Definition}
+A Zener diode is a specially designed PN junction diode that operates in the reverse breakdown region to maintain a constant output voltage.
+
+\subsection{V--I Characteristics}
+The Zener diode conducts very little current in reverse bias until the breakdown voltage (Zener voltage) is reached. Beyond this point, the voltage remains nearly constant while current increases sharply.
+
+\subsection{Zener Breakdown}
+Zener breakdown occurs due to a strong electric field across the depletion region, causing electrons to tunnel through the junction.
+
+\subsection{Zener Diode as Voltage Regulator}
+A Zener diode connected in reverse bias across a load maintains a constant voltage output even when the input voltage or load current varies.
+
+\subsection{Applications}
+\begin{itemize}
+    \item Voltage regulation
+    \item Over-voltage protection
+    \item Reference voltage circuits
+\end{itemize}
+
+\end{document}
